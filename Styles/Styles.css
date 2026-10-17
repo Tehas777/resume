@@ -162,9 +162,6 @@ margin-bottom: 45px;
 
 /* Education syles */
 
-.Education{
-
-}
 
 .education-title {
     font-style: normal;
@@ -196,17 +193,16 @@ margin-bottom: 45px;
 }
 
 
-
 /* sidebar styles */
 
 .sidebar{
     background-color: #1E2939;
     padding-top: 40px;
-    width: 370;
+    width: 370px;
 }
 
-.photo{
-    width: 370;
+.photo {
+    width: 370px;
     margin-bottom: 50px;
 }
 
@@ -298,4 +294,108 @@ margin-bottom: 45px;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.contact-item:hover {
+    color: #fb6d3a;
+}
+.contact-icon {
+    width: 28px;
+    font-size: 26px;
+    text-align: center;
+}
+.phone-icon {
+    color: #2ed65f;
+}
+.telegram-icon {
+    color: #29a9ea;
+}
+.github-icon {
+    color: #ffffff;
+}
+.email-icon {
+    color: #fb6d3a;
+}
+
+.methodologies,
+.languages {
+    margin-top: 35px;
+    margin-left: 40px;
+}
+
+.location-icon {
+    color: #fb6d3a;
+}
+
+.contact-detail {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+@page {
+    size: A4;
+    margin: 0;
+}
+@media print {
+    body {
+        margin: 0;
+        background: #ffffff;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    .Main {
+        width: 210mm;
+        min-height: 297mm;
+        margin: 0;
+    }
+    .main-content {
+        padding: 15mm 12mm;
+        box-shadow: none;
+    }
+    .sidebar {
+        width: 65mm;
+        padding-top: 10mm;
+        flex-shrink: 0;
+    }
+    .photo {
+        width: 65mm;
+        margin-bottom: 8mm;
+    }
+    .abaut,
+    .Projects,
+    .work {
+        margin-bottom: 20px;
+    }
+    .contacts {
+        margin-bottom: 25px;
+    }
+    .methodologies,
+    .languages {
+        margin-top: 20px;
+    }
+    .work-list-item,
+    .project,
+    .tech-skills-text,
+    .tech-soft-text {
+        line-height: 20px;
+    }
+    .Main {
+        width: 280mm;
+        min-height: auto;
+        zoom: 0.75;
+    }
 }
