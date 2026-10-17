@@ -399,3 +399,12 @@ margin-bottom: 45px;
         zoom: 0.75;
     }
 }
+.email-contact {
+    gap: 8px;
+    font-size: 13px;
+}
+.email-contact .contact-icon {
+    width: 24px;
+    font-size: 22px;
+    flex-shrink: 0;
+}
